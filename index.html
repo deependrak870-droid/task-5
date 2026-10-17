@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="ShopSmart online store for headphones, watches and shoes.">
+
+  <title>ShopSmart | Online Shopping</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript File -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header" id="home">
+    <h1 class="logo">ShopSmart</h1>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="cart">
+      🛒 Cart: <span id="cart-count">0</span>
+    </p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to ShopSmart</h2>
+    <p>Discover amazing products at affordable prices.</p>
+    <a href="#products" class="shop-button">Shop Now</a>
+  </section>
+
+  <!-- Products Section -->
+  <main id="products" class="container">
+
+    <h2>Our Products</h2>
+    <p>Choose your favourite products.</p>
+
+    <!-- Search Box -->
+    <label for="search">Search Products</label>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search headphones, watch, shoes..."
+      autocomplete="off"
+    >
+
+    <!-- Product Cards -->
+    <div class="products">
+
+      <!-- Product 1 -->
+      <article class="product" data-name="headphones">
+
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+          alt="Wireless headphones"
+          width="600"
+          height="400"
+          loading="lazy"
+        >
+
+        <h3>Headphones</h3>
+        <p class="price">₹999</p>
+
+        <button type="button" class="add-cart">
+          Add to Cart
+        </button>
+
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product" data-name="watch">
+
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+          alt="Stylish wrist watch"
+          width="600"
+          height="400"
+          loading="lazy"
+        >
+
+        <h3>Smart Watch</h3>
+        <p class="price">₹1,499</p>
+
+        <button type="button" class="add-cart">
+          Add to Cart
+        </button>
+
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product" data-name="shoes">
+
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+          alt="Red sports shoes"
+          width="600"
+          height="400"
+          loading="lazy"
+        >
+
+        <h3>Sports Shoes</h3>
+        <p class="price">₹1,999</p>
+
+        <button type="button" class="add-cart">
+          Add to Cart
+        </button>
+
+      </article>
+
+    </div>
+
+    <!-- Status Message -->
+    <p id="message" role="status" aria-live="polite"></p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h3>ShopSmart</h3>
+    <p>Your shopping, made simple.</p>
+    <p>&copy; 2026 ShopSmart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
